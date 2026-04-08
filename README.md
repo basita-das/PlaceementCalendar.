@@ -1,20 +1,117 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Placement & DSA Tracker
 
-# Run and deploy your AI Studio app
+> Mastering DSA and tracking placements, one day at a time.
 
-This contains everything you need to run your app locally.
+## Project Demo (GIF/Image)
 
-View your app in AI Studio: https://ai.studio/apps/6cce5f87-4de6-407c-983e-71641e0b41c2
+![Project Screenshot/GIF Placeholder](https://via.placeholder.com/1200x600?text=Project+Demo+Screenshot)
+_Insert your project GIF or high-resolution screenshot here._
 
-## Run Locally
+## Core Features
 
-**Prerequisites:**  Node.js
+- **Interactive Study Calendar**: A highly visual, motion-enhanced calendar to track daily DSA progress.
+- **Placement Event Logging**: Specialized tags for Online Assessments (OA), Mock Tests, and Interviews.
+- **Integrated Review System**: Add and edit detailed reviews/feedback for every placement event directly from the calendar or notes section.
+- **Monthly Goal Tracking**: Set and visualize monthly milestones with a dynamic progress bar.
+- **Responsive Design**: Optimized layout for all devices (Image → Calendar → Notes on mobile).
+- **Dark Mode Support**: Seamlessly switches between light and dark themes for late-night coding sessions.
+- **Local Persistence**: All your notes, goals, and reviews are saved locally in your browser.
 
+## Technologies Used
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS 4.0
+- **Animations**: Framer Motion / Motion for React
+- **Icons**: Lucide React
+- **Date Handling**: date-fns
+- **Build Tool**: Vite
+
+## Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+## Installation & Setup
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/placement-dsa-tracker.git
+   cd placement-dsa-tracker
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+## Environment Configuration
+
+Create a `.env` file in the root directory for any external integrations (e.g., Gemini API for future AI features):
+
+```env
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Calendar/         # Core calendar components (Grid, Header, Hero, Notes)
+│   └── ui/               # Reusable UI components (Buttons, Inputs, etc.)
+├── constants/            # Configuration and static data (Month images, tags)
+├── lib/                  # Utility functions
+├── types/                # TypeScript interfaces and types
+└── App.tsx               # Main application entry point
+```
+
+## Usage Instructions
+
+1. **Navigate Months**: Use the arrows in the header to switch between months.
+2. **Add Notes**: Click on any date to open the notes editor in the sidebar.
+3. **Log Events**: Use the "Add Placement Event" button in the notes section to log OAs or Interviews.
+4. **Add Reviews**: Click on a tag in the calendar or the edit icon in the notes section to add your feedback.
+5. **Track Progress**: Check off goals in the notes section to see your monthly progress bar update.
+
+## API Documentation
+
+_Currently, this is a client-side application. Future versions may include an Express backend for cloud sync._
+
+## Technical Challenges & Solutions
+
+- **Responsive Reordering**: Solved the challenge of stacking components differently on mobile (Image-Calendar-Notes) vs Desktop (Image/Notes-Calendar) using Tailwind's CSS Grid and `order` utilities.
+- **Complex State Management**: Managed synchronized state between the calendar grid and the sidebar notes using React hooks and local storage persistence.
+- **Smooth Transitions**: Implemented 3D-like rotation effects for month switching using Framer Motion's `AnimatePresence`.
+
+## Future Roadmap
+
+- [ ] **AI Insights**: Use Gemini API to analyze interview reviews and suggest focus areas.
+- [ ] **Cloud Sync**: Integrate Firebase for cross-device data synchronization.
+- [ ] **PDF Export**: Generate a monthly summary report of DSA progress and interview performance.
+- [ ] **Notification System**: Reminders for upcoming assessments.
+
+## Contributing Guidelines
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact Information
+
+**Basita Das** - [basita.das08@gmail.com](mailto:basita.das08@gmail.com)
+Project Link: [https://github.com/your-username/placement-dsa-tracker](https://github.com/your-username/placement-dsa-tracker)
