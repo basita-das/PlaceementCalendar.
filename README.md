@@ -2,10 +2,13 @@
 
 > Mastering DSA and tracking placements, one day at a time.
 
-## Project Demo (GIF/Image)
+## Project Demo
 
-![Project Screenshot/GIF Placeholder](https://via.placeholder.com/1200x600?text=Project+Demo+Screenshot)
-_Insert your project GIF or high-resolution screenshot here._
+<div align="center">
+  <img src="src/assets/Screenshot 2026-04-09 at 2.45.14 AM.png" alt="Placement & DSA Tracker Screenshot 1" width="800" />
+  <br />
+  <img src="src/assets/Screenshot 2026-04-09 at 2.45.45 AM.png" alt="Placement & DSA Tracker Screenshot 2" width="800" />
+</div>
 
 ## Core Features
 
@@ -36,7 +39,7 @@ _Insert your project GIF or high-resolution screenshot here._
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/placement-dsa-tracker.git
+   git clone https://github.com/basita-das/PlaceementCalendar..git
    cd placement-dsa-tracker
    ```
 
@@ -107,11 +110,7 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Contact Information
 
-**Basita Das** - [basita.das08@gmail.com](mailto:basita.das08@gmail.com)
-Project Link: [https://github.com/your-username/placement-dsa-tracker](https://github.com/your-username/placement-dsa-tracker)
+**Basita Das** - [basitadas16@gmail.com](mailto:basitadas16@gmail.com)
+Project Link: [https://github.com/basita-das/PlaceementCalendar..git](https://github.com/basita-das/PlaceementCalendar..git)
