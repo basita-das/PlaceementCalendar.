@@ -113,4 +113,4 @@ Contributions are welcome! Please follow these steps:
 ## Contact Information
 
 **Basita Das** - [basitadas16@gmail.com](mailto:basitadas16@gmail.com)
-Project Link: [https://github.com/basita-das/PlaceementCalendar..git](https://github.com/basita-das/PlaceementCalendar..git)
+[Project Link](https://placeement-calendar.vercel.app/)
