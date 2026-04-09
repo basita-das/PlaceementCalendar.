@@ -47,17 +47,19 @@ export default function CalendarHero({ image, monthName }: CalendarHeroProps) {
               referrerPolicy="no-referrer"
             />
             
-            {/* Clean Month/Year Overlay */}
-            <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-8 text-right z-10">
+            {/* Clean Month/Year Overlay with improved visibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+            
+            <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-8 text-right z-10 max-w-[calc(100%-2rem)]">
               <motion.div
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                <p className="text-white text-lg sm:text-3xl font-black tracking-tighter mb-0 sm:mb-1">
+                <p className="text-white text-lg sm:text-3xl font-black tracking-tighter mb-0 sm:mb-1 drop-shadow-md">
                   {year}
                 </p>
-                <h1 className="text-primary text-2xl sm:text-7xl font-black uppercase tracking-tighter leading-none">
+                <h1 className="text-primary text-3xl sm:text-5xl md:text-6xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-black uppercase tracking-tighter leading-none drop-shadow-2xl whitespace-nowrap">
                   {monthName}
                 </h1>
               </motion.div>

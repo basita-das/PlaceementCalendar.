@@ -56,12 +56,12 @@ export default function CalendarHeader({
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 px-1 sm:px-2 gap-4 sm:gap-6">
-      <div className="flex items-center justify-between w-full sm:w-auto gap-6">
+    <div className="flex items-center justify-between mb-6 sm:mb-8 px-1 sm:px-2 gap-4">
+      <div className="flex items-center gap-6">
         <div className="relative" ref={pickerRef}>
           <button 
             onClick={() => setShowPickers(!showPickers)}
-            className="flex flex-col items-end sm:items-start text-right sm:text-left group transition-all"
+            className="flex flex-col items-start text-left group transition-all"
           >
             <AnimatedUnderline className="pb-1">
               <span className="font-display font-black text-xl xs:text-2xl sm:text-5xl text-primary tracking-tighter uppercase leading-none">
@@ -115,7 +115,7 @@ export default function CalendarHeader({
         </div>
       </div>
 
-      <div className="flex items-center justify-center sm:justify-end w-full sm:w-auto gap-2 sm:gap-4">
+      <div className="flex items-center justify-end gap-2 sm:gap-4">
         <div className="flex gap-1 sm:gap-2 bg-black/40 p-1 sm:p-1.5 rounded-xl border border-slate-800 backdrop-blur-sm">
           <button
             onClick={onPrevMonth}
